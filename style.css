@@ -7,6 +7,7 @@ body{
     font-style: normal;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* shared styles  */
@@ -24,6 +25,10 @@ body{
     font-weight: 600;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: rgb(65, 25, 25);
 }
 
 
@@ -75,8 +80,70 @@ body{
 }
 .banner-image{
     width:100%;
+}
+
+/* team section start  */
+
+.team-section-container{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid tomato; */
+    width: 85%;
+    margin: 0 auto;
+    height: 710px;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: row;
+}
+.team-section-image-container{
+    width: 684px;
+    height: 710px;
+    /* border: 2px solid yellowgreen; */
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 24px;
 
 }
+.team-section-image-container img{
+    height: 340px;
+    width: 340px;
+}
+
+.team-section-content{
+    margin-left: 60px;
+    margin-top: 170px;
+}
+.team-section-content h3{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+#quick-list{
+    color: rgb(114, 114, 114);
+    font-weight: 500;
+}
+#features{
+    color: rgb(255, 144, 14);
+}
+.team-section-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+.team-section-content button{
+    margin-top: 32px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,4 +156,40 @@ body{
     .navbar , .nav-links{
         flex-direction: column;
     }
+    .navbar h3{
+        margin-left: 25px;
+        margin-right: 20px;
+    }
+    .nav-links{
+        margin-right: 0px;
+        margin-top: 30x;
+        gap: 8px;
+    }
+    .banner-content{
+        width:100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .banner-content p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .team-section-container{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .team-section-image-container{
+        grid-template-columns: repeat( 1 ,1fr);
+        width: 100%;
+        margin-left: 10px;
+    }
+    .team-section-image-container img{
+        width:100%;
+    }
+    .team-section-content{
+       
+        margin-top:730px;
+    }
+    
+
 }
